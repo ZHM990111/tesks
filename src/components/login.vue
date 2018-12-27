@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class='login'>
         <img
             src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1545733400&di=c4ee2b898ab6fe6489f4d6157e2b46b9&src=http://images.missyuan.com/attachments/day_150720/20150720_5b9a08266c6270e1a2e34EcsPPESCPec.jpg"
             alt=""
@@ -18,6 +18,14 @@ export default {
 </script>
 
 <style scoped>
+.login{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 img {
   width: 100px;
   height: 100px;
@@ -29,5 +37,9 @@ button{
     border-radius: 30px;
     margin-top: 20px;
     background: #fff;
+}
+a{
+    width: 100%;
+    text-align: center;
 }
 </style>
