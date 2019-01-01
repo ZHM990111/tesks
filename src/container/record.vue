@@ -89,6 +89,7 @@ export default {
 <style lang='less' scoped>
 .record {
   width: 100%;
+  height: 100%;
   margin-top: 30px;
 }
 .swiper-container,
@@ -143,9 +144,9 @@ li {
   display: flex;
   dl {
     width: 30%;
-    img{
-        width: 100%;
-        height: auto;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }

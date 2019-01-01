@@ -1,45 +1,28 @@
 <template>
     <div class="home">
-        <div class="top">
-            <div class="topsearch">
-                <i class="iconfont icon-huatong"></i>
-                <input type="text" placeholder="猜你喜欢">
-                <i class="iconfont icon-paixingbang"></i>
-            </div>
-            <div class="tab">
-                <p>
-                    <router-link :to="{name:'Record'}">个性推荐</router-link>
-                </p>
-                <p>
-                    <router-link :to="{name:'Radio'}">个性推荐</router-link>
-                </p>
-            </div>
-            <div class="count">
-                <router-view></router-view>
-            </div>
-        </div>
         <div class="foot">
-            <p>
-                <i class="iconfont icon-faxian"></i>
+            <router-link :to="{name:'Find'}">
+                <i id="icon" class="iconfont icon-faxian"></i>
                 <span>发现</span>
-            </p>
-            <p>
-                <i class="iconfont icon-shipin"></i>
+            </router-link>
+            <router-link :to="{name:'Video'}">
+                <i id="icon" class="iconfont icon-shipin"></i>
                 <span>视频</span>
-            </p>
-            <p>
-                <i class="iconfont icon-yinle"></i>
+            </router-link>
+            <router-link :to="{name:'Mine'}">
+                <i id="icon" class="iconfont icon-yinle"></i>
                 <span>我的</span>
-            </p>
-            <p>
-                <i class="iconfont icon-pengyou"></i>
+            </router-link>
+            <router-link :to="{name:'Friend'}">
+                <i id="icon" class="iconfont icon-pengyou"></i>
                 <span>交友</span>
-            </p>
-            <p>
-                <i class="iconfont icon-wode"></i>
+            </router-link>
+            <router-link :to="{name:'Account'}">
+                <i id="icon" class="iconfont icon-wode"></i>
                 <span>账号</span>
-            </p>
+            </router-link>
         </div>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -95,7 +78,7 @@ input::-webkit-input-placeholder {
   font-size: 16px;
   margin-top: 10px;
 }
-a {
+a{
   text-decoration: none;
   color: rgb(204, 197, 197);
 }
@@ -104,25 +87,24 @@ a {
 }
 .foot {
   width: 100%;
-  height: 50px;
-  line-height: 40px;
   position: fixed;
   left: 0;
   bottom: 0;
   background: #eee;
-  display: flex;
+  display: flex; 
 }
-.foot>p{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.foot>a{
+    color: #000;
+    display: inline-block;
+    width: 20%;
     text-align: center;
 }
-.foot>p>.iconfont{
+#icon{
     color: #000;
+    display: inline-block;
     font-size: 20px;
 }
 span{
-    font-size: 12px;
+    display: block;
 }
 </style>
